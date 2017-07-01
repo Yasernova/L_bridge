@@ -1,6 +1,9 @@
 $lightColor: #eee
 $darkColor: #222
 $fontSize: 2rem
+.active-li:after
+  width: 20%
+  color: white
 %logo
   background: $lightColor
   width: 7rem
@@ -18,8 +21,19 @@ $fontSize: 2rem
     cursor: pointer
     background: none
     color: $lightColor
+%lnk
+  position: absolute
+  top: 0
+  left: 0
+  display: inline-block
+  width: 100% 
+  height: 100%
+  color: $lightColor
+  &:hover, &:active
+    text-decoration: none
+    color: white
 html
-  font-size: 10px
+  font-size: 11px
 body
   background-image: url(../images/home-6.jpg)
   background-size: cover
@@ -39,6 +53,7 @@ nav
   height: 100%
   padding: 5rem 2.5rem
   position: fixed
+  z-index: 10
   .logo
     @extend %logo
   ul
@@ -46,24 +61,27 @@ nav
     padding: 0
     padding-top: 5rem
     li
-      padding: 2rem 0
+      margin: 2rem 0rem
+      height: 3rem
+      padding: 0.5rem 0
       text-transform: uppercase
       list-style: none
       font-size: 1.5rem
       position: relative
+      a 
+        @extend %lnk
       &:after
         content: ""
         position: absolute
         width: 0
         height: 1px
         background-color: $lightColor
-        bottom: 1rem
+        top: 100%
         left: 0
         transition: all 0.5s ease
-      &:first-child:after
-        width: 20%
       &:hover:after
         width: 20%
+        color: white
       &:hover
         cursor: pointer
   p
@@ -110,14 +128,19 @@ nav
     text-transform: uppercase
     font-size: $fontSize
     li
+      position: relative
       color: white
       text-align: center
       width: 100%
-      padding: 1.5rem 0
+      margin: 3rem 0rem
+      padding: 1rem 0rem
       list-style: none
+      a 
+        @extend %lnk
 .intro
   text-transform: uppercase
   padding: 0
+  margin: 0
   font-size: 72px
   font-weight: 600
   margin: 0
