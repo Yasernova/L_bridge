@@ -1,0 +1,67 @@
+html {
+  font-size: 10px; }
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/about.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.active-li:after {
+  width: 20%;
+  color: white; }
+
+.contact {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0; }
+  .contact h1 {
+    text-transform: uppercase;
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    margin-top: 0;
+    letter-spacing: 1rem; }
+  .contact i {
+    margin: 0rem 1.5rem;
+    margin-top: 10rem; }
+    .contact i:before {
+      font-size: 3rem; }
+  .contact textarea {
+    display: block;
+    width: 100%; }
+  .contact .inpt {
+    display: flex;
+    justify-content: space-between; }
+    .contact .inpt input {
+      width: 45%;
+      height: 4rem; }
+      .contact .inpt input:focus {
+        outline: none; }
+  .contact textarea, .contact input {
+    background-color: transparent;
+    border: 1px solid #eee;
+    padding: 1rem;
+    margin-bottom: 2rem; }
+  .contact textarea[placeholder], .contact input[placeholder] {
+    color: #eee !important; }
+  .contact textarea:focus, .contact input:focus {
+    color: #222;
+    background-color: #eee;
+    outline: none;
+    font-weight: 700; }
+  .contact button {
+    outline: none;
+    background-color: #eee;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: #222;
+    text-transform: uppercase;
+    height: 4rem;
+    font-weight: 700;
+    border: none;
+    width: 15rem; }
+
+@media only screen and (orientation: portrait) {
+  .about p {
+    padding: 5rem 2rem !important; } }
+
+/*# sourceMappingURL=contact.css.map */
