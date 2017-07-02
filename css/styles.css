@@ -41,6 +41,7 @@ body {
   background-position: center center;
   font-size: 1.5rem;
   font-family: raleway;
+  font-weight: 700;
   color: #eee;
   transition: all 0.5s ease-in-out; }
 
@@ -52,7 +53,7 @@ body {
   background-color: rgba(0, 0, 0, 0.5); }
 
 nav {
-  width: 16.66%;
+  width: 20%;
   height: 100%;
   padding: 5rem 2.5rem;
   position: fixed;
@@ -86,7 +87,8 @@ nav {
   nav p {
     font-size: 1.2rem;
     font-weight: 700;
-    margin-top: 5rem; }
+    margin-top: 5rem;
+    padding-right: 20%; }
   nav .icns {
     margin-top: 5rem; }
     nav .icns i {
@@ -123,17 +125,20 @@ nav {
   .mob-nav ul {
     display: none;
     padding: 0;
-    margin: 1rem 0;
+    margin: 0;
     text-transform: uppercase;
     font-size: 2rem; }
     .mob-nav ul li {
       position: relative;
       color: white;
+      line-height: 6rem;
+      vertical-align: center;
       text-align: center;
       width: 100%;
-      margin: 3rem 0rem;
-      padding: 1rem 0rem;
+      padding: 3rem 0rem;
       list-style: none; }
+      .mob-nav ul li:first-child {
+        margin-top: 5rem; }
 
 .intro {
   text-transform: uppercase;
@@ -142,7 +147,7 @@ nav {
   font-size: 72px;
   font-weight: 600;
   margin: 0;
-  padding-left: 16.66%;
+  padding-left: 20%;
   opacity: 0; }
 
 .blur {

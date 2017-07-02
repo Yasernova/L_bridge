@@ -24,7 +24,7 @@ body {
   .about i {
     margin: 0rem 1.5rem; }
     .about i:before {
-      font-size: 3rem; }
+      font-size: 2rem; }
 
 @media only screen and (orientation: portrait) {
   .about p {

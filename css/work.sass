@@ -1,0 +1,37 @@
+$lightColor: #eee
+$darkColor: #222
+$fontSize: 2rem
+html
+	font-size: 10px
+body 
+	background-image: none 
+	.cntnr
+		background-color: $lightColor 
+.active-li:after
+	width: 20%
+	color: white
+nav 
+	background: url(../images/nav-cover.jpg)
+	background-size: cover
+	background-position: center center
+.work
+	margin-left: 23%
+	margin-right: 3%
+	h1
+		color: $darkColor
+		margin: 0
+		padding-top: 7rem
+		padding-bottom: 5rem
+		font-size: 2.5 * $fontSize
+	.gallary
+		.img-cnt
+			padding: 0
+			div
+				padding: 0
+				margin: 1.5rem
+				box-sizing: border-box !important
+				background-color: $darkColor
+				border: 1px solid $lightColor
+			
+@media only screen and (orientation: portrait)
+	

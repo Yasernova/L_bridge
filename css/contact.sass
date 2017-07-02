@@ -11,21 +11,21 @@ body
 	width: 20%
 	color: white
 .contact
+	opacity: 0
 	width: 50%
 	margin: 0 auto
 	padding: 0
 	h1 
 		text-transform: uppercase
 		font-size: 2*$fontSize
-		margin-bottom: 5rem
+		margin-bottom: 50px
 		margin-top: 0
 		letter-spacing: 1rem
 	i
 		margin: 0rem 1.5rem
-		margin-top: 10rem
-
+		margin-top: 5rem
 		&:before
-			font-size: 1.5 * $fontSize
+			font-size: $fontSize
 	textarea
 		display: block
 		width: 100%
@@ -40,20 +40,19 @@ body
 	textarea, input
 		background-color: transparent
 		border: 1px solid $lightColor
+		-webkit-text-fill-color: $lightColor
 		padding: 1rem
-		margin-bottom: 2rem
-	textarea[placeholder], input[placeholder]
-		color: $lightColor !important
+		margin-bottom: 20px
 	textarea:focus, input:focus
-		color: $darkColor
+		-webkit-text-fill-color: $darkColor !important
 		background-color: $lightColor
 		outline: none
 		font-weight: 700
 	button
 		outline: none
 		background-color: $lightColor
-		margin-bottom: 2rem
-		margin-top: 2rem
+		margin-bottom: 20px
+		margin-top: 20px
 		color: $darkColor
 		text-transform: uppercase
 		height: 4rem
@@ -64,7 +63,12 @@ body
 
 			
 @media only screen and (orientation: portrait)
-	.about
-		p
-			padding: 5rem 2rem !important
+	.contact
+		width: 100% !important
+		padding-left: 10%
+		padding-right: 10%
+		.inpt
+			display: block !important
+			input
+				width: 100% !important
 		

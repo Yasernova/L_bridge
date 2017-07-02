@@ -48,22 +48,31 @@ $(function(){
   menuBars.on('click', function(){
     intro.toggleClass('blur');
     about.toggleClass('blur');
+    contact.toggleClass('blur');
     menuList.slideToggle(300);
   })
-//================ about ===========================
-  var about = $('.about');
+//================ about & contact ==================
+  var about = $('.about'),
+      contact = $('.contact')
   
-  about.css({
-    paddingTop: (scrn - about.height())*0.7,
-    paddingBottom: (scrn - about.height())*0.3
-  });
-  var animateAbout = setTimeout(function(){
-    about.animate({
-      paddingTop: (scrn - about.height()) * 0.5,
-      paddingBottom: (scrn - about.height()) * 0.5,
-      opacity: 1
-    }, 1000)
-  },500);
+  function animateContent(page){
+    page.css({
+    paddingTop: (scrn - page.height())*0.7,
+    paddingBottom: (scrn - page.height())*0.3
+    });
+    var anmtPage = setTimeout(function(){
+      page.animate({
+        paddingTop: (scrn - page.height()) * 0.5,
+        paddingBottom: (scrn - page.height()) * 0.5,
+        opacity: 1
+      }, 1000)
+    } ,500);
+  }
+  animateContent(about);
+  animateContent(contact);
+//================ work ===========================
+  var galImg = $('.img-cnt div');
 
+  galImg.height(galImg.width()-50);
 
 })

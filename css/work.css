@@ -1,0 +1,36 @@
+html {
+  font-size: 10px; }
+
+body {
+  background-image: none; }
+  body .cntnr {
+    background-color: #eee; }
+
+.active-li:after {
+  width: 20%;
+  color: white; }
+
+nav {
+  background: url(../images/nav-cover.jpg);
+  background-size: cover;
+  background-position: center center; }
+
+.work {
+  margin-left: 23%;
+  margin-right: 3%; }
+  .work h1 {
+    color: #222;
+    margin: 0;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    font-size: 5rem; }
+  .work .gallary .img-cnt {
+    padding: 0; }
+    .work .gallary .img-cnt div {
+      padding: 0;
+      margin: 1.5rem;
+      box-sizing: border-box !important;
+      background-color: #222;
+      border: 1px solid #eee; }
+
+/*# sourceMappingURL=work.css.map */

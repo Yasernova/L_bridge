@@ -11,20 +11,21 @@ body {
   color: white; }
 
 .contact {
+  opacity: 0;
   width: 50%;
   margin: 0 auto;
   padding: 0; }
   .contact h1 {
     text-transform: uppercase;
     font-size: 4rem;
-    margin-bottom: 5rem;
+    margin-bottom: 50px;
     margin-top: 0;
     letter-spacing: 1rem; }
   .contact i {
     margin: 0rem 1.5rem;
-    margin-top: 10rem; }
+    margin-top: 5rem; }
     .contact i:before {
-      font-size: 3rem; }
+      font-size: 2rem; }
   .contact textarea {
     display: block;
     width: 100%; }
@@ -39,20 +40,19 @@ body {
   .contact textarea, .contact input {
     background-color: transparent;
     border: 1px solid #eee;
+    -webkit-text-fill-color: #eee;
     padding: 1rem;
-    margin-bottom: 2rem; }
-  .contact textarea[placeholder], .contact input[placeholder] {
-    color: #eee !important; }
+    margin-bottom: 20px; }
   .contact textarea:focus, .contact input:focus {
-    color: #222;
+    -webkit-text-fill-color: #222 !important;
     background-color: #eee;
     outline: none;
     font-weight: 700; }
   .contact button {
     outline: none;
     background-color: #eee;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
     color: #222;
     text-transform: uppercase;
     height: 4rem;
@@ -61,7 +61,13 @@ body {
     width: 15rem; }
 
 @media only screen and (orientation: portrait) {
-  .about p {
-    padding: 5rem 2rem !important; } }
+  .contact {
+    width: 100% !important;
+    padding-left: 10%;
+    padding-right: 10%; }
+    .contact .inpt {
+      display: block !important; }
+      .contact .inpt input {
+        width: 100% !important; } }
 
 /*# sourceMappingURL=contact.css.map */
