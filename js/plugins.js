@@ -1,5 +1,12 @@
 $(function(){
 
+
+  
+  
+  var lodin = $('.lodng');
+  win.on('load', function(){
+    lodin.css({'display': 'none'});
+  });
   var scrn = document.body.clientHeight,
       win = $(window);
 
