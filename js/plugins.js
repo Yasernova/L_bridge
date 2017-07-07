@@ -49,11 +49,21 @@ $(function(){
     intro.toggleClass('blur');
     about.toggleClass('blur');
     contact.toggleClass('blur');
-    menuList.slideToggle(300);
+    work.toggleClass('blur');
+    blog.toggleClass('blur');
+    $(this).toggleClass('slided');
+    if($(this).hasClass('slided')){
+      menuList.slideDown(500);
+    }else{
+      menuList.slideUp(0);
+    }
+    
   })
 //================ about & contact ==================
   var about = $('.about'),
-      contact = $('.contact')
+      contact = $('.contact'),
+      work = $('.work'),
+      blog = $('.blog');
   
   function animateContent(page){
     page.css({
@@ -73,6 +83,17 @@ $(function(){
 //================ work ===========================
   var galImg = $('.img-cnt div');
 
-  galImg.height(galImg.width()-50);
+  win.on('load resize', function(){
+    galImg.height(galImg.width());
+  });
+//================ Blog ===========================
+  var relImg = $('.related .img');
 
+  relImg.height(relImg.width()*0.625);
+
+
+                  /*Have a nice surfing*/
+                  /*Ahmed Yasser*/
+                  /*7/7/2017*/
+                  /*1st*/
 })
