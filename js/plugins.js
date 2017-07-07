@@ -1,14 +1,13 @@
 $(function(){
 
+  
+  var win = $(window);
+  var loaded = $('.loading');
 
+
+  loaded.css('display', 'none');
   
-  
-  var lodin = $('.lodng');
-  win.on('load', function(){
-    lodin.css({'display': 'none'});
-  });
-  var scrn = document.body.clientHeight,
-      win = $(window);
+  var scrn = document.body.clientHeight;
 
   var img = 1,
       body = $('body.home'),

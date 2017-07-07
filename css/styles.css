@@ -155,7 +155,8 @@ nav {
   background-color: rgba(0, 0, 0, 0.75);
   filter: blur(20px); }
 
-.lodng {
+.loading {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -163,7 +164,7 @@ nav {
   height: 100%;
   background-color: #222;
   z-index: 10; }
-  .lodng .pulse {
+  .loading .pulse {
     background-color: #eee;
     border-radius: 50%;
     position: absolute;
